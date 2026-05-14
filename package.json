@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NEXT_DIST_DIR=.next-dev next dev",
-    "dev:polling": "NEXT_DIST_DIR=.next-dev WATCHPACK_POLLING=true next dev",
-    "build": "NEXT_DIST_DIR=.next-build next build",
-    "start": "NEXT_DIST_DIR=.next-build next start",
-    "lint": "next lint",
-    "typecheck": "NEXT_DIST_DIR=.next-build next typegen && tsc --noEmit",
-    "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev",
-    "db:push": "prisma db push",
-    "db:seed": "tsx prisma/seed.ts"
+  "dev": "next dev",
+  "dev:polling": "WATCHPACK_POLLING=true next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "typecheck": "next typegen && tsc --noEmit",
+  "db:generate": "prisma generate",
+  "db:migrate": "prisma migrate dev",
+  "db:push": "prisma db push",
+  "db:seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
